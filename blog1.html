@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>模拟下拉选择框</title>
+</head>
+<style type="text/css">
+	.bar{
+		position: static
+	}
+	.div-nav{
+		height: 2rem;
+		padding: 0.5rem;
+		border:1px solid #01b26c;
+		border-radius: 0.5rem
+	}
+	.div-nav-content{
+		line-height: 2rem;
+		width: 85%;
+		margin: 0 auto;
+		height: 2rem;
+		background-color: #FFFFFF;
+		display:-webkit-box;
+	    display: -webkit-flex;
+	    display: flex;
+	    flex-flow: row;
+	    border-radius: 0.2rem
+	}
+	.div-nav-content div{
+		-webkit-box-flex: 1;
+		-webkit-flex: 1;
+		flex: 1;
+		text-align: center
+	}
+	.div-time{
+		color: #01b26c
+	}
+	.div-time-content{
+		display: none;
+		border: 1px solid #01b26c;
+		border-radius: 0 0 0.2rem 0.2rem;
+		color: #01b26c
+	}
+	.div-time:hover .div-time-content{
+		display: block;
+		background: #FFFFFF
+	}
+	.div-time:hover{
+		background: #01b26c;
+		border-radius: 0.2rem;
+		color: #FFFFFF
+	}
+	.div-td:hover{
+		background: #01b26c;
+		color: #FFFFFF
+	}
+</style>
+<body>
+	<div class="div-nav">
+        <div class="div-nav-content">
+            <div class="div-time">
+                <span>天</span>
+                <div class="div-time-content">
+                    <div class="div-td">今天</div>
+                    <div class="div-td">上一天</div>
+                    <div class="div-td">下一天</div>
+                </div>
+            </div>
+            <div class="div-time">
+                <span>周</span>
+                <div class="div-time-content">
+                    <div class="div-td">本周</div>
+                    <div class="div-td">上一周</div>
+                    <div class="div-td">下一周</div>
+                </div>
+            </div>
+            <div class="div-time">
+                <span>月</span>
+                <div class="div-time-content">
+                    <div class="div-td">本月</div>
+                    <div class="div-td">上个月</div>
+                    <div class="div-td">下个月</div>
+                </div>
+            </div>
+            <div class="div-time">
+                <span>年</span>
+                <div class="div-time-content">
+                    <div class="div-td">今年</div>
+                    <div class="div-td">上一年</div>
+                    <div class="div-td">下一年</div>
+                </div>
+            </div>
+            <div class="div-time">
+                <span>自定义</span>
+                <div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
